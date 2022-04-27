@@ -1,3 +1,25 @@
 body {
     background-color: blueviolet;
 }
+#pageTitle {
+    font-size: 100px;
+    text-align: left;
+    font-family: 'Ms Madi', cursive;
+    padding-left: 1.5em;
+
+}
+#pageSub {
+    font-size: 25px;
+    letter-spacing: 1em;
+    font-style: italic;
+    padding-left: 7em;
+}
+#pageTitle + #pageSub {
+    margin-top: -50px;
+}
+#adventure {
+    text-decoration: underline;
+}
+.totalHeader {
+    border: 1px solid black;
+}
