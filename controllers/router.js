@@ -8,4 +8,8 @@ router.get('/', (req,res) => {
     .catch(console.error)
 })
 
+router.get('/new', (req,res) => {
+    res.render('newPost')
+})
+
 module.exports = router
