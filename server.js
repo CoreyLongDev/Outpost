@@ -5,12 +5,12 @@ const app = express()
 const router = require('./controllers/router')
 require('ejs')
 
-
-app.set('view engine', 'ejs')
 // app.use(ejsLayouts)
+app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 app.use(router)
+app.set('view engine', 'ejs')
 
 
 app.listen(4444, () => {

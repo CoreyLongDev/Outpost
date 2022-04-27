@@ -8,7 +8,7 @@ router.get('/', (req,res) => {
     .catch(console.error)
 })
 
-router.get('/new', (req,res) => {
+router.get('/newPost', (req,res) => {
     res.render('newPost')
 })
 
