@@ -2,7 +2,8 @@ const mongoose = require('../db/connections')
 
 const BlogSchema = new mongoose.Schema({
     title: String,
-    img: String,
+    location: String,
+    activity: String,
     content: String
 })
 
