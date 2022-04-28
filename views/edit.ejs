@@ -12,18 +12,7 @@
 </head>
 <body>
     <%- include("./partials/header.ejs") %>
-
-    <% items.forEach(info => { %>
-       <div class="container">
-        <form action="/edit" method="get">
-            <button type="submit">edit</button>
-        </form>
-       <h3 id="title"> <%= info.title  %><span id="divider">  /  </span><%= info.activity  %></h3> 
-        <%= info.location  %>
-        <%= info.content  %>
-        <br id="bottomSpacer">
-        <% }) %>   
-    </div> 
+    this is where we edit
     <%- include("./partials/footer.ejs") %>
 </body>
 </html>
