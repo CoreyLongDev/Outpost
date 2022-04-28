@@ -2,24 +2,23 @@ body {
     background-color: blueviolet;
 }
 #pageTitle {
+    color: #796EF0;
     font-size: 100px;
     text-align: left;
     font-family: 'Ms Madi', cursive;
     padding-left: 1.5em;
+    border: 1px solid black;
 
 }
 #pageSub {
+    color: #A271CE;
     font-size: 25px;
-    letter-spacing: 1em;
+    letter-spacing: 0.5em;
     font-style: italic;
     padding-left: 7em;
+    font-family: 'Courier New', Courier, monospace;
 }
-#pageTitle + #pageSub {
-    margin-top: -50px;
-}
+
 #adventure {
     text-decoration: underline;
-}
-.totalHeader {
-    border: 1px solid black;
 }

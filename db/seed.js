@@ -1,9 +1,9 @@
-const Posts = require("../models/posts");
+const Blog = require("../models/posts");
 const seedData = require("./seeds.json");
 
-Posts.deleteMany({})
+Blog.deleteMany({})
     .then(() => {
-        return Posts.insertMany(seedData);
+        return Blog.insertMany(seedData);
     })
     .then(console.log)
     .catch(console.error)
