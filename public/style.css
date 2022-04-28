@@ -52,3 +52,9 @@ footer {
     color: #A271CE;
     font-size: 35px;
 }
+#bottomSpacer {
+    margin-bottom: 25px;
+}
+#idButton {
+    margin-top: 25px;
+}
