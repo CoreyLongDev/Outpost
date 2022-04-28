@@ -15,15 +15,12 @@
 
     <% items.forEach(info => { %>
        <div class="container">
-       <h3 id="title"> <%= info.title  %> / <%= info.activity  %></h3> <button id="idButton">Edit</button>
-       <br id="locationSpacer">
+       <h3 id="title"> <%= info.title  %><span id="divider">  /  </span><%= info.activity  %></h3> 
+       <button id="idButton" href="router/<%=this.id%>">Edit</button>
+       <br>
         <%= info.location  %>
-        <br id="contentSpacer">
         <%= info.content  %>
         <% }) %>   
-        <div>
-            <a href="/_id">show</a>
-        </div>
     </div> 
     <%- include("./partials/footer.ejs") %>
 </body>

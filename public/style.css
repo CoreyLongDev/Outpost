@@ -45,15 +45,10 @@ footer {
     font-size: 14px;
 }
 #title {
-    font-size: 24px;
+    font-size: 30px;
     color: #796EF0;
 }
-#contentSpacer {
-
-}
-#locationSpacer {
-
-}
-.idButton {
-
+#divider {
+    color: #A271CE;
+    font-size: 35px;
 }

@@ -16,8 +16,7 @@ router.post('/newPost', (req,res) => {
 
 // router.get('/:id', (req,res) => {
 //     Blog.findById(req.params.id)
-//     .then((blog) => {
-//         res.render('show', blog)
+//     .then((x) => { res.render('/about', x)
 //     })
 //     .catch(console.error)
 // })
@@ -31,7 +30,3 @@ router.get('/newPost', (req,res) => {
 router.get('/about', (req,res) => {
     res.render('about')
 })
-
-// router.get('/test', (req,res) => {
-//     res.render('show')
-// })
