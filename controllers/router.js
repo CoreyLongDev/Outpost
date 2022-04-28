@@ -12,4 +12,8 @@ router.get('/newPost', (req,res) => {
     res.render('newPost')
 })
 
+router.get('/about', (req,res) => {
+    res.render('about')
+})
+
 module.exports = router

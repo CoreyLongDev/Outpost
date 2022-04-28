@@ -1,5 +1,7 @@
 body {
     background-color: blueviolet;
+    margin: 0 auto;
+    max-width: 75%;
 }
 #pageTitle {
     color: #796EF0;
@@ -13,7 +15,7 @@ body {
 #pageSub {
     color: #A271CE;
     font-size: 25px;
-    letter-spacing: 0.5em;
+    /* letter-spacing: 0.5em; */
     font-style: italic;
     padding-left: 7em;
     font-family: 'Courier New', Courier, monospace;
@@ -21,4 +23,11 @@ body {
 
 #adventure {
     text-decoration: underline;
+}
+#hotLinks {
+    list-style: none;
+    display: inline;
+}
+li {
+    display: inline;
 }
