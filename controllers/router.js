@@ -14,7 +14,13 @@ router.post('/newPost', (req,res) => {
     console.log('new adventure added')
 })
 
-
+// router.get('/:id', (req,res) => {
+//     Blog.findById(req.params.id)
+//     .then((blog) => {
+//         res.render('show', blog)
+//     })
+//     .catch(console.error)
+// })
 
 module.exports = router
 
@@ -25,3 +31,7 @@ router.get('/newPost', (req,res) => {
 router.get('/about', (req,res) => {
     res.render('about')
 })
+
+// router.get('/test', (req,res) => {
+//     res.render('show')
+// })
