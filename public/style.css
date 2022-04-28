@@ -15,7 +15,7 @@ body {
 #pageSub {
     color: #A271CE;
     font-size: 25px;
-    /* letter-spacing: 0.5em; */
+    /* letter-spacing: 0.25em; */
     font-style: italic;
     padding-left: 7em;
     font-family: 'Courier New', Courier, monospace;
@@ -26,8 +26,17 @@ body {
 }
 #hotLinks {
     list-style: none;
-    display: inline;
+    display: inline-block;
+    /* margin: 0 auto; */
+    text-align: center;
 }
 li {
     display: inline;
+}
+footer {
+    text-align: center;
+    font-size: 24px;
+}
+#copyright {
+    font-size: 14px;
 }
