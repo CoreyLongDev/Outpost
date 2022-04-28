@@ -12,7 +12,15 @@
 </head>
 <body>
     <%- include("./partials/header.ejs") %>
-this is the home page
+
+    <% items.forEach(info => { %>
+       <div class="container">
+       <h3 id="title"> <%= info.title  %> <%= info.activity  %></h3>
+        <br> 
+        <%= info.location  %> 
+        <br>
+        <%= info.content  %>
+        <% }) %>   </div>
     <%- include("./partials/footer.ejs") %>
 </body>
 </html>
