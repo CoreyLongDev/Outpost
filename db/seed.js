@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Blog = require("../models/posts");
 const seedData = require("./seeds.json");
 
