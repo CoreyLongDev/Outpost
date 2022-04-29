@@ -11,8 +11,9 @@ router.get('/', (req,res) => {
 router.post('/newPost', (req,res) => {
     Blog.create(req.body)
     .then((blog) => res.redirect("/"))
-    console.log('new adventure added')
+    console.log('adventure added')
 })
+
 
 module.exports = router
 

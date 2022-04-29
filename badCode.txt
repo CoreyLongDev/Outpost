@@ -1,0 +1,29 @@
+///broken EDIT function from router (view and edit)
+
+router.get('/:id/edit', (req,res) => {
+    const id = req.body.id;
+    console.log(id)
+    Blog.findById(id)
+    .then((blog) => {
+        res.render('/edit', blog)
+    })
+    .catch(console.error)
+})
+
+router.put('/:id', (req,res) => {
+    const id = req.params.id
+    Blog.findOneAndUpdate(
+        { _id: id },
+        {
+            title: req.body.title,
+            location: req.body.location,
+            activity: req.body.activity,
+            content: req.body.content,
+        },
+        { new: true}
+    )
+    .then((blog) => {
+        res.render('/edit', blog)
+    })
+    .catch(console.error)
+})
