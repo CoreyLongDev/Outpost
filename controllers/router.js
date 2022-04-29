@@ -43,7 +43,8 @@ router.put('/:id', (req,res) => {
 })
 
 router.delete('/:id', (req,res) => {
-    Blog.findOneAndDelete({ _id: req.params.id }).then(() => res.redirect('/'))
+    Blog.findOneAndDelete({ _id: req.params.id })
+    .then(() => res.redirect('/'))
 })
 
 

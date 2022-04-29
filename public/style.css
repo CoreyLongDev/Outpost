@@ -31,7 +31,6 @@ body {
 #hotLinks {
     list-style: none;
     display: inline-block;
-    /* margin: 0 auto; */
     text-align: center;
 }
 li {
@@ -55,6 +54,19 @@ footer {
 #bottomSpacer {
     margin-bottom: 25px;
 }
-.buttons {
+#edit {
     margin-top: 20px;
+    background-color: aliceblue;
+    color: #796EF0;
+    font-size: 18px;
+}
+#delete {
+    color: white;
+    background-color: red;
+    font-size: 18px;
+}
+#location {
+    color: greenyellow;
+    font-size: 24px;
+    border-bottom: 3px solid #796EF0;
 }

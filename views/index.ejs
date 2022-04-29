@@ -16,12 +16,13 @@
     <% items.forEach(info => { %>
        <div class="container">
 
-<a href="/<%=info.id %>/edit"><button class="buttons">Edit Post</button></a>
+<a href="/<%=info.id %>/edit"><button id="edit">Edit</button></a>
 <form action="/<%=info.id %>?_method=DELETE" method="POST">
-<input type="submit" value="DELETE"/>
+<input id="delete" type="submit" value="DELETE"/>
 </form>
        <h3 id="title"> <%= info.title  %><span id="divider">  /  </span><%= info.activity  %></h3> 
-        <%= info.location  %>
+        <span id="location"><%= info.location  %></span>
+        <br>
         <%= info.content  %>
         <br id="bottomSpacer">
         <% }) %>   
