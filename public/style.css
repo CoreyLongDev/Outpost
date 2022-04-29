@@ -55,6 +55,6 @@ footer {
 #bottomSpacer {
     margin-bottom: 25px;
 }
-#idButton {
-    margin-top: 25px;
+.buttons {
+    margin-top: 20px;
 }

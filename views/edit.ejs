@@ -12,7 +12,21 @@
 </head>
 <body>
     <%- include("./partials/header.ejs") %>
-    this is where we edit
+    <form action="/<%=blog._id %>/?_method=PUT" method="POST">
+        <label for="title">Title:</label>
+        <input type="text" name="title">
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" name="location">
+        <br>
+        <label for="activity">Activity:</label>
+        <input type="text" name="activity">
+        <br>
+        <label for="content">Talk about your adventure here:</label>
+        <input type="text" name="content">
+        <br>
+        <input type="submit">
+    </form>
     <%- include("./partials/footer.ejs") %>
 </body>
 </html>

@@ -15,12 +15,11 @@
 
     <% items.forEach(info => { %>
        <div class="container">
-        <form action="/:id/edit" method="get">
-            <button type="submit">edit</button>
-        </form>
-        <form action="/<% this.delete %>">
-        <button type="submit">delete</button>
-        </form>
+
+<a href="/<%=info.id %>/edit"><button class="buttons">Edit Post</button></a>
+<form action="/<%=info.id %>?_method=DELETE" method="POST">
+<input type="submit" value="DELETE"/>
+</form>
        <h3 id="title"> <%= info.title  %><span id="divider">  /  </span><%= info.activity  %></h3> 
         <%= info.location  %>
         <%= info.content  %>
