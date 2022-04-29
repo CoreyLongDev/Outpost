@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
     <title>The Outpost</title>
-</head>
-<body>
-    <%- include("./partials/header.ejs") %>
-
-    <% items.forEach(info => { %>
-       <div class="container">
-
-<a href="/<%=info.id %>/edit"><button id="edit">Edit</button></a>
-<form action="/<%=info.id %>?_method=DELETE" method="POST">
-<input id="delete" type="submit" value="DELETE"/>
-</form>
-       <h3 id="title"> <%= info.title  %><span id="divider">  /  </span><%= info.activity  %></h3> 
-        <span id="location"><%= info.location  %></span>
-        <br>
-        <%= info.content  %>
-        <br id="bottomSpacer">
-        <% }) %>   
-    </div> 
+  </head>
+  <body>
+    <%- include("./partials/header.ejs") %> <% items.forEach(info => { %>
+    <div class="container">
+      <a href="/<%=info.id %>/edit"><button id="edit">Edit</button></a>
+      <form action="/<%=info.id %>?_method=DELETE" method="POST">
+        <input id="delete" type="submit" value="DELETE" />
+      </form>
+      <h3 id="title">
+        <%= info.title %><span id="divider"> / </span><%= info.activity %>
+      </h3>
+      <span id="location"><%= info.location %></span>
+      <br />
+      <%= info.content %>
+      <br id="bottomSpacer" />
+      <% }) %>
+    </div>
     <%- include("./partials/footer.ejs") %>
-</body>
+  </body>
 </html>

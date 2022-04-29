@@ -1,72 +1,71 @@
 body {
-    background-color: blueviolet;
-    margin: 0 auto;
-    max-width: 75%;
+  background-color: blueviolet;
+  margin: 0 auto;
+  max-width: 75%;
 }
 .container {
-    text-align: center;
-    border: 1px solid black;
+  text-align: center;
+  border: 1px solid black;
 }
 #pageTitle {
-    color: #796EF0;
-    font-size: 100px;
-    text-align: left;
-    font-family: 'Ms Madi', cursive;
-    padding-left: 1.5em;
-    border: 1px solid black;
-
+  color: #796ef0;
+  font-size: 100px;
+  text-align: left;
+  font-family: "Ms Madi", cursive;
+  padding-left: 1.5em;
+  border: 1px solid black;
 }
 #pageSub {
-    color: #A271CE;
-    font-size: 25px;
-    /* letter-spacing: 0.25em; */
-    font-style: italic;
-    padding-left: 7em;
-    font-family: 'Courier New', Courier, monospace;
+  color: #a271ce;
+  font-size: 25px;
+  /* letter-spacing: 0.25em; */
+  font-style: italic;
+  padding-left: 7em;
+  font-family: "Courier New", Courier, monospace;
 }
 
 #adventure {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 #hotLinks {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
 }
 li {
-    display: inline;
+  display: inline;
 }
 footer {
-    text-align: center;
-    font-size: 24px;
+  text-align: center;
+  font-size: 24px;
 }
 #copyright {
-    font-size: 14px;
+  font-size: 14px;
 }
 #title {
-    font-size: 30px;
-    color: #796EF0;
+  font-size: 30px;
+  color: #796ef0;
 }
 #divider {
-    color: #A271CE;
-    font-size: 35px;
+  color: #a271ce;
+  font-size: 35px;
 }
 #bottomSpacer {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 #edit {
-    margin-top: 20px;
-    background-color: aliceblue;
-    color: #796EF0;
-    font-size: 18px;
+  margin-top: 20px;
+  background-color: aliceblue;
+  color: #796ef0;
+  font-size: 18px;
 }
 #delete {
-    color: white;
-    background-color: red;
-    font-size: 18px;
+  color: white;
+  background-color: red;
+  font-size: 18px;
 }
 #location {
-    color: greenyellow;
-    font-size: 24px;
-    border-bottom: 3px solid #796EF0;
+  color: greenyellow;
+  font-size: 24px;
+  border-bottom: 3px solid #796ef0;
 }

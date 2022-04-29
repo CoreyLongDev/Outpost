@@ -1,11 +1,11 @@
-const mongoose = require('../db/connections')
+const mongoose = require("../db/connections");
 
 const BlogSchema = new mongoose.Schema({
-    title: String,
-    location: String,
-    activity: String,
-    content: String
-})
+  title: String,
+  location: String,
+  activity: String,
+  content: String,
+});
 
-const Blog = mongoose.model('blog', BlogSchema)
-module.exports = Blog
+const Blog = mongoose.model("blog", BlogSchema);
+module.exports = Blog;

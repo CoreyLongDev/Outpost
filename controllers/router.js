@@ -1,63 +1,62 @@
-const express = require('express')
-const Blog = require('../models/posts')
-const router = express.Router()
+const express = require("express");
+const Blog = require("../models/posts");
+const router = express.Router();
 
-router.get('/', (req,res) => {
-    Blog.find({})
-    .then((x) => res.render('index', { items: x }))
-    .catch(console.error)
-})
+router.get("/", (req, res) => {
+  Blog.find({})
+    .then((x) => res.render("index", { items: x }))
+    .catch(console.error);
+});
 
-router.post('/newPost', (req,res) => {
-    Blog.create(req.body)
-    .then(() => res.redirect("/"))
-    console.log('adventure added')
-})
+router.post("/newPost", (req, res) => {
+  Blog.create(req.body)
+  .then(() => res.redirect("/"));
+  console.log("adventure added");
+});
 
-router.get('/:id/edit', (req,res) => {
-    const id = req.params.id;
-    console.log(id)
-    Blog.findById(id)
+router.get("/:id/edit", (req, res) => {
+  const id = req.params.id;
+  console.log(id);
+  Blog.findById(id)
     .then((blog) => {
-        res.render('edit', { blog: blog })
+      res.render("edit", { blog: blog });
     })
-    .catch(console.error)
-})
+    .catch(console.error);
+});
 
-router.put('/:id', (req,res) => {
-    const id = req.params.id
-    Blog.findOneAndUpdate(
-        { _id: id },
-        {
-            title: req.body.title,
-            location: req.body.location,
-            activity: req.body.activity,
-            content: req.body.content,
-        },
-        { new: true}
-    )
+router.put("/:id", (req, res) => {
+  const id = req.params.id;
+  Blog.findOneAndUpdate(
+    { _id: id },
+    {
+      title: req.body.title,
+      location: req.body.location,
+      activity: req.body.activity,
+      content: req.body.content,
+    },
+    { new: true }
+  )
     .then((blog) => {
-        res.redirect('/')
+      res.redirect("/");
     })
-    .catch(console.error)
-})
+    .catch(console.error);
+});
 
-router.delete('/:id', (req,res) => {
-    Blog.findOneAndDelete({ _id: req.params.id })
-    .then(() => res.redirect('/'))
-})
+router.delete("/:id", (req, res) => {
+  Blog.findOneAndDelete({ _id: req.params.id })
+  .then(() => res.redirect("/"));
+});
 
+module.exports = router;
 
-module.exports = router
+router.get("/newPost", (req, res) => {
+  res.render("newPost");
+});
 
-router.get('/newPost', (req,res) => {
-    res.render('newPost')
-})
+router.get("/about", (req, res) => {
+  res.render("about");
+});
 
-router.get('/about', (req,res) => {
-    res.render('about')
-})
-
-router.get('/edit', (req,res) => {
-    res.render('edit')
-})
+router.get("/edit", (req, res) => {
+  res.render("edit");
+});

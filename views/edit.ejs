@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
     <title>The Outpost</title>
-</head>
-<body>
+  </head>
+  <body>
     <%- include("./partials/header.ejs") %>
     <form action="/<%=blog._id %>/?_method=PUT" method="POST">
-        <label for="title">Title:</label>
-        <input type="text" name="title">
-        <br>
-        <label for="location">Location:</label>
-        <input type="text" name="location">
-        <br>
-        <label for="activity">Activity:</label>
-        <input type="text" name="activity">
-        <br>
-        <label for="content">Talk about your adventure here:</label>
-        <input type="text" name="content">
-        <br>
-        <input type="submit">
+      <label for="title">Title:</label>
+      <input type="text" name="title" />
+      <br />
+      <label for="location">Location:</label>
+      <input type="text" name="location" />
+      <br />
+      <label for="activity">Activity:</label>
+      <input type="text" name="activity" />
+      <br />
+      <label for="content">Talk about your adventure here:</label>
+      <input type="text" name="content" />
+      <br />
+      <input type="submit" />
     </form>
     <%- include("./partials/footer.ejs") %>
-</body>
+  </body>
 </html>
